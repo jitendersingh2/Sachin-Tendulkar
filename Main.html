@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <meta charset="utf-8"/>
+	  
+	  <style>
+	  
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body, #container {
+			height: 100%;
+		}
+		table, th , td  {
+		border: 1px solid grey;
+		border-collapse: collapse;
+		padding: 5px;
+		}
+		.right {
+			float:left;
+			width: 60%;
+			height: 470px;
+		}
+		.left {
+			margin-left: 20px;
+			width: 35%;
+			float:left;
+			height: 500px;
+			border-right: 1px solid black;
+		
+	  </style>
+	  
+	  <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  <script src="Match_Data.js"></script>
+   </head>
+   
+   <body ng-app="mainModule" ng-controller="mainController">
+   
+   <div class='left'>
+   <h1 >Sachin Tendulkar's Homepage</h1>
+   
+   <h3>Brief Bio</h3>
+   Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will.
+   <br> 
+   </div>
+   
+   <div class='right'>
+		<table>
+			<tr>
+				<th>Match</th>
+				<th>Total Match</th>
+				<th>Runs</th>
+				<th>Highest Score</th>
+				<th>Average</th>
+			</tr>
+			<tr ng-repeat="x in match_data">
+				<td>{{x.type}}</td>
+				<td>{{x.totalMatch}}</td>
+				<td>{{x.totalRuns}}</td>
+				<td>{{x.highestScore}}</td>
+				<td>{{x.average}}</td>
+			</tr>
+		</table>
+   </div>
+   
+   </body>
+   
+</html>
