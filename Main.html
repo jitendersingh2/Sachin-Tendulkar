@@ -12,17 +12,17 @@
 		html, body, #container {
 			height: 100%;
 		}
-		table, th , td  {
+		#t1, #t2, th, td{
 		border: 1px solid grey;
 		border-collapse: collapse;
 		padding: 5px;
 		}
-		.right {
+		#right {
 			float:left;
 			width: 60%;
 			height: 470px;
 		}
-		.left {
+		#left {
 			margin-left: 20px;
 			width: 35%;
 			float:left;
@@ -37,16 +37,53 @@
    
    <body ng-app="mainModule" ng-controller="mainController">
    
-   <div class='left'>
+   <div id='left'>
    <h1 >Sachin Tendulkar's Homepage</h1>
    
+   <div>
+		<h2>Personal Information</h2>
+		<table class="table">
+			<tr>
+				<td><b>Born</td>
+				<td>Apr 24, 1973</td>
+			</tr>
+			<tr>
+				<td><b>Birth Place</td>
+				<td>Mumbai, Maharashtra</td>
+			</tr>
+			<tr>
+				<td><b>Nickname</td>
+				<td>Tendulkar</td>
+			</tr>
+			<tr>
+				<td><b>Height</td>
+				<td>5 ft 5 in</td>
+			</tr>
+			<tr>
+				<td><b>Role</td>
+				<td>Batsman</td>
+			</tr>
+			<tr>
+				<td><b>Batting Style</td>
+				<td>Right Handed Bat</td>
+			</tr>
+			<tr>
+				<td><b>Bowling Style</td>
+				<td>Right-arm legbreak</td>
+			</tr>
+		</table>
+   </div>
    <h3>Brief Bio</h3>
    Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will.
    <br> 
    </div>
    
-   <div class='right'>
-		<table>
+   <input type="button" value="Career Info"
+   
+   <div id='right'>
+   
+		<h2>Batting Career Summary</h2>
+		<table id="t1" class="table table-striped">
 			<tr>
 				<th>Match</th>
 				<th>Total Match</th>
@@ -54,7 +91,7 @@
 				<th>Highest Score</th>
 				<th>Average</th>
 			</tr>
-			<tr ng-repeat="x in match_data">
+			<tr ng-repeat="x in battingData">
 				<td>{{x.type}}</td>
 				<td>{{x.totalMatch}}</td>
 				<td>{{x.totalRuns}}</td>
@@ -62,6 +99,34 @@
 				<td>{{x.average}}</td>
 			</tr>
 		</table>
+		
+		<h2>Bowling Career Summary</h2>
+		<table id="t1" class="table table-striped">
+			<tr>
+				<th>Match</th>
+				<th>Total Match</th>
+				<th>Wickets</th>
+				<th>Best Bowling</th>
+				<th>Economy Rate</th>
+			</tr>
+			<tr ng-repeat="x in bowlingData">
+				<td>{{x.type}}</td>
+				<td>{{x.totalMatch}}</td>
+				<td>{{x.wickets}}</td>
+				<td>{{x.bbm}}</td>
+				<td>{{x.economy}}</td>
+			</tr>
+		</table>
+		
+		<div class="container">
+			<h2>Career Information</h2>
+			<table id="t2"class="table table-striped">
+				<tr ng-repeat="x in careerinfoData">
+					<td>{{x[0]}}</td>
+					<td>{{x[1]}}</td>
+				</tr>
+			</table>
+		</div>
    </div>
    
    </body>
