@@ -1,4 +1,4 @@
-var app = angular.module('mainModule', []);
+var app = angular.module('mainModule', ['mainModule1']);
 
 app.controller('mainController', function ($scope) {
 	$scope.battingData = [
@@ -43,7 +43,9 @@ app.controller('mainController', function ($scope) {
 	sixes : 29
 }
 	
-];
+]});
+
+app.controller('mainController1', function ($scope) {
 
 	$scope.bowlingData = [
 	{
@@ -79,7 +81,9 @@ app.controller('mainController', function ($scope) {
 	fours : 295,
 	sixes : 29
 }
-];
+]});
+
+app.controller('mainController2', function ($scope) {
 
 $scope.careerinfoData = [
 		['Test debut', 'Nov 15, 1989, vs Pakistan, National Stadium'],
@@ -91,4 +95,6 @@ $scope.careerinfoData = [
 		['IPL debut', 'vs Chennai Super Kings, May 14, 2008, Wankhede Stadium'],
 		['Last IPL', 'vs Sunrisers Hyderabad, May 13, 2013, Wankhede Stadium']
 ]});
+
+angular.bootstrap(document, ['mainModule', 'mainModule1'])
 
