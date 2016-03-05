@@ -1,0 +1,28 @@
+* {
+		padding: 0;
+		margin: 0;
+}
+header {
+		height: 50px;
+		background: gray;
+}
+html, body, #container {
+		height: 100%;
+}
+#t1, #t2, #t3, th, td{
+		border: 1px solid grey;
+		border-collapse: collapse;
+		padding: 5px;
+}
+#right {
+		float:left;
+		width: 60%;
+		height: 470px;
+}
+#left {
+		margin-left: 20px;
+		width: 35%;
+		float:left;
+		height: 500px;
+		border-right: 1px solid black;
+}
