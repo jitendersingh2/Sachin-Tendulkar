@@ -1,0 +1,30 @@
+<h3 align='center'>Batting Career Summary</h3>
+<div class='container'>
+	<table id="t3" class="table table-striped table-condensed" >
+		<tr>
+			<th>Match</th>
+			<th>Total Match</th>
+			<th>Runs</th>
+			<th>Highest Score</th>
+			<th>Average</th>
+			<th>100</th>
+			<th>200</th>
+			<th>50</th>
+			<th>4s</th>
+			<th>6s</th>
+		</tr>
+		<tr ng-repeat="x in battingData">
+			<td>{{x.type}}</td>
+			<td>{{x.totalMatch}}</td>
+			<td>{{x.totalRuns}}</td>
+			<td>{{x.highestScore}}</td>
+			<td>{{x.average}}</td>
+			<td>{{x.hundreds}}</td>
+			<td>{{x.doubleHundreds}}</td>
+			<td>{{x.fiftys}}</td>
+			<td>{{x.fours}}</td>
+			<td>{{x.sixes}}</td>
+		</tr>
+		
+	</table>
+</div>

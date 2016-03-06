@@ -8,9 +8,20 @@ header {
 }
 html, body, #container {
 		height: 100%;
+		max-width: 100%;
+		
 }
-#t1, #t2, #t3, th, td{
-		border: 1px solid grey;
+#t1, #t2{
+		text-align: center;
+}
+#t2{
+		width: 800px;
+}
+#t3, #t4{
+		width: 1200px;
+}
+
+table, th, td{
 		border-collapse: collapse;
 		padding: 5px;
 }

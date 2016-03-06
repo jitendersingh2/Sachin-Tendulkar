@@ -1,0 +1,23 @@
+<h3 align='center'>Bowling Career Summary</h3>
+<div class='container'>
+	<table id="t4" class="table table-striped table-condensed">
+		<tr>
+			<th>Match</th>
+			<th>Total Match</th>
+			<th>Wickets</th>
+			<th>Best Bowling</th>
+			<th>Economy Rate</th>
+			<th>Strike Rate</th>
+			<th>5W</th>
+		</tr>
+		<tr ng-repeat="x in bowlingData">
+			<td>{{x.type}}</td>
+			<td>{{x.totalMatch}}</td>
+			<td>{{x.wickets}}</td>
+			<td>{{x.bbm}}</td>
+			<td>{{x.economy}}</td>
+			<td>{{x.strikeRate}}</td>
+			<td>{{x.fivewicketsinInning}}</td>
+		</tr>
+	</table>
+</div>
