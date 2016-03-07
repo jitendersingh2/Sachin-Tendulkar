@@ -7,8 +7,8 @@
 	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	  <script src="JS Source Files/Module.js"></script>
-	  <script src="JS Source Files/Controllers/batting-bowlingCareer.controller.js"></script>
-	  <script src="JS Source Files/Controllers/careerInfo.controller.js"></script>
+	  <script src="JS_Source_Files/Controllers/batting-bowlingCareer.controller.js"></script>
+	  <script src="JS_Source_Files/Controllers/careerInfo.controller.js"></script>
    </head>
    <!-- ng-cloak is added so that HTML isn't shown in the document before AngularJS has had time to process it --> 
    <body ng-app="mainModule" ng-cloak>
@@ -24,7 +24,7 @@
 		<div>
 			<h2>Personal Information</h2>
 			<!-- ng-include directive will fetch, compile and include the personal information view -->
-			<div ng-include="'PartialsView/PersonalInfo.html'"></div>
+			<div ng-include="'Partials_View/PersonalInfo.html'"></div>
 		</div>
 		<!-- View for batting and bowling career summary -->
 		<div ng-controller="battingbowlingcareerController">
@@ -32,8 +32,8 @@
 			<button type="button" ng-click='showBattingDiv()'>Display Batting Career</button>&nbsp;&nbsp;
 			<button type="button" ng-click='showBowlingDiv()'>Display Bowling Career</button>&nbsp;
 			<!-- ng-show directive shows or hides the batting/bowling career viw based on which button is clicked -->
-			<div ng-include="'PartialsView/BattingCareer.html'" ng-show="boolBatting"></div>
-			<div ng-include="'PartialsView/BowlingCareer.html'" ng-show="boolBowling"></div>
+			<div ng-include="'Partials_View/BattingCareer.html'" ng-show="boolBatting"></div>
+			<div ng-include="'Partials_View/BowlingCareer.html'" ng-show="boolBowling"></div>
 		</div>
 		<br>
    </div>
@@ -46,7 +46,7 @@
 			<div><i>{{briefBio}}</i></div>		
 			<h3 align="center">Career Information</h3>
 			<!-- ng-include directive will fetch, compile and include the career information view -->
-			<div ng-include="'PartialsView/CareerInfo.html'"></div>
+			<div ng-include="'Partials_View/CareerInfo.html'"></div>
 		</div>		
    </div>
   </body>
