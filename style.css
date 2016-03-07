@@ -9,31 +9,36 @@ header {
 html, body, #container {
 		height: 100%;
 		max-width: 100%;
-		
+		overflow: auto;
+		overflow-x: hidden;
 }
-#t1, #t2{
+img {
+		height: "126";
+		width: "126";
+		float: left;
+}
+#t1, #t2 {
 		text-align: center;
 }
-#t2{
+#t2 {
 		width: 800px;
 }
-#t3, #t4{
+#t3, #t4 {
 		width: 1200px;
 }
-
-table, th, td{
+table, th, td {
 		border-collapse: collapse;
 		padding: 5px;
 }
 #right {
-		float:left;
+		float: left;
 		width: 60%;
 		height: 470px;
 }
 #left {
 		margin-left: 20px;
 		width: 35%;
-		float:left;
+		float: left;
 		height: 500px;
 		border-right: 1px solid black;
 }
