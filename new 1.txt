@@ -1,6 +1,0 @@
-*Deploy project on server
-*Make separate .js file for data
-*Read data directly from scope object into controller
-*Read data from local JSON file
-*Add css/bootstrap to the application
-*Separate Test, ODI, IPL logic

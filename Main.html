@@ -21,10 +21,15 @@
    <div>
    <div id='left'>
    
+<<<<<<< HEAD
    <pre><img src="Profile_Pic.jpg" alt="Smiley face" height="126" width="126"><h3>Sachin Tendulkar</h3></pre>
+=======
+   <img src="Profile_Pic.jpg" alt="Smiley face" height="84" width="84">
+>>>>>>> 4e0ad8e64b9fa193f279828f067d655e6cd6cc45
    <div>
 		<div ng-include="'Partials/personalInfo.html'"></div>
    </div>
+<<<<<<< HEAD
 
    <br>
    </div>
@@ -49,6 +54,33 @@
 			<div ng-include="'Partials/BattingCareer.html'" ng-show="boolBatting"></div>
 			<div ng-include="'Partials/BowlingCareer.html'" ng-show="boolBowling"></div>
    </div>
+=======
+   <h3>Brief Bio</h3>
+   <div ng-controller="careerInfoController">{{briefBio}}</div>
+   <br>
+    <input type='button' ng-click='showDiv()'>Batting</input>
+  </div>
+   
+   
+   
+   <div id='right'>
+   
+		<h3 align='center'>Career Information</h3>
+		<div class='container' ng-controller="careerInfoController">
+			<table id="t3"class="table table-striped table-condensed">
+				<tr ng-repeat="x in careerinfoData">
+					<td>{{x[0]}}</td>
+					<td>{{x[1]}}</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div ng-controller='battingController' >
+			<div ng-include="'Partials/BattingCareer.html'" ng-show="bool"></div>
+		</div>
+   
+		
+>>>>>>> 4e0ad8e64b9fa193f279828f067d655e6cd6cc45
    </div>
    </body>
    

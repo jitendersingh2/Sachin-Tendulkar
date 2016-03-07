@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	
 "briefBio" : "Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will.",
 
@@ -53,10 +54,53 @@
 	"fiftys" : "13",
 	"fours" : "295",
 	"sixes" : "29"
+=======
+'battingData' : [
+	{
+	type : "Test",
+	totalMatch : 200,
+	totalInnings : 329,
+	totalRuns : 15921,
+	highestScore : 248,
+	average : 53.79,
+	strikeRate : 54.08,
+	hundreds : 51,
+	doubleHundreds : 6,
+	fiftys : 68,
+	fours : 2058,
+	sixes : 69
+}, { 
+	type : "ODI",
+	totalMatch : 463,
+	totalInnings : 452,
+	totalRuns : 18426,
+	highestScore : 200,
+	average : 44.83,
+	strikeRate : 86.24,
+	hundreds : 41,
+	doubleHundreds : 1,
+	fiftys : 96,
+	fours : 2016,
+	sixes : 195
+}, {
+	type : "IPL",
+	totalMatch : 78,
+	totalInnings : 78,
+	totalRuns : 2334,
+	highestScore : 100,
+	average : 33.83,
+	strikeRate : 119.82,
+	hundreds : 1,
+	doubleHundreds : 0,
+	fiftys : 13,
+	fours : 295,
+	sixes : 29
+>>>>>>> 4e0ad8e64b9fa193f279828f067d655e6cd6cc45
 }
 	
 ],
 
+<<<<<<< HEAD
 "bowlingData" : [
 	{
 	"type" : "Test",
@@ -91,6 +135,41 @@
 	"average" : 0,
 	"strikeRate" : 0,
 	"fivewicketsinInning" : 0
+=======
+'bowlingData' : [
+	{
+	type : "Test",
+	totalMatch : 200,
+	totalInnings : 145,
+	wickets : 46,
+	bbi : '10/3',
+	bbm : '14/3',
+	economy : 3.53,
+	average : 54.17
+	
+}, { 
+	type : "ODI",
+	totalMatch : 463,
+	totalInnings : 270,
+	wickets : 154,
+	bbi : '32/5',
+	bbm : '32/5',
+	economy : 5.1,
+	average : 44.48	
+}, {
+	type : "IPL",
+	totalMatch : 78,
+	totalInnings : 4,
+	wickets : 0,
+	bbi : '7/0',
+	bbm : '7/0',
+	economy : 9.67,
+	average : 0,
+	doubleHundreds : 0,
+	fiftys : 13,
+	fours : 295,
+	sixes : 29
+>>>>>>> 4e0ad8e64b9fa193f279828f067d655e6cd6cc45
 }
 ]
 }
